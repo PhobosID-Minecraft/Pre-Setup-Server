@@ -1,0 +1,101 @@
+#
+# =====================
+# === MAIN SETTINGS ===
+# =====================
+#
+# How many crops should be harvested before the Hoe takes 1 durability damage?
+# Default: 4
+usesPerDurability: 4
+#
+# How much damage should be done per above number of uses?
+# Default: 1
+decrementDurabilityBy: 1
+#
+# Should the Fortune enchant be ignored when harvesting? (Reduces how OP this plugin becomes)
+# Default: true
+ignoreFortune: true
+#
+# Should the Unbreaking enchant be ignored when harvesting? (Reduces how OP this plugin becomes)
+# Default: true
+ignoreUnbreaking: true
+#
+# Should the plugin require the player to have the "fineharvest.use" permission?
+# Default: true
+usePermissions: true
+#
+# ======================
+# === SOUND SETTINGS ===
+# ======================
+#
+# What sound should harvesting make?
+# Default: BLOCK_BEEHIVE_EXIT
+harvestSound: BLOCK_BEEHIVE_EXIT
+#
+# How loud should the harvest sound be?
+# Default: 0.15
+harvestVolume: 0.15
+#
+# What pitch should the harvest sound be?
+# Default: 1.0
+harvestPitch: 1.0
+#
+# Should the harvest sound be varied pitch?
+# Default: true
+harvestVaried: true
+#
+# How much should the pitch variance be?
+# Default: 0.5
+harvestVariance: 0.5
+#
+# =======================
+# === COMPAT SETTINGS ===
+# =======================
+#
+# Enable AureliumSkills support?
+# Default: true
+aureliumSkillsSupport: true
+#
+# Enable mcMMO support?
+# Default: true
+mcMMOSupport: true
+#
+# =====================
+# === DROP SETTINGS ===
+# =====================
+# Note: all values below are after the plugin has planted a crop
+# E.g. min value of 0 will still replant, but not drop any more.
+#
+# WHEAT seeds
+# Default: Min 0 | Max 1
+minWheatSeeds: 0
+maxWheatSeeds: 1
+#
+# BEETROOT seeds
+# Default: Min 0 | Max 1
+minBeetrootSeeds: 0
+maxBeetrootSeeds: 1
+#
+# BEETROOT
+# Default: Min 1 | Max 3
+minBeetroot: 1
+maxBeetroot: 3
+#
+# CARROTS
+# Default: Min 0 | Max 2
+minCarrots: 0
+maxCarrots: 2
+#
+# POTATOS
+# Default: Min 0 | Max 2
+minPotatos: 0
+maxPotatos: 2
+#
+# WHEAT
+# Default: Min 1 | Max 1
+minWheat: 1
+maxWheat: 1
+#
+# NETHER WART
+# Default: Min 2 | Max 3
+minNetherWart: 1
+maxNetherWart: 3

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1744533707884
+  login: 1744532684200
+money: '0'
+last-account-name: PhobosID
+logoutlocation:
+  world: 500b1c80-5e21-4bad-8edf-74b576bcc73b
+  world-name: world
+  x: 183.60985321511825
+  y: 63.9375
+  z: -504.9978832767138
+  yaw: -155.5498046875
+  pitch: 17.550039291381836
+lastlocation:
+  world: 500b1c80-5e21-4bad-8edf-74b576bcc73b
+  world-name: world
+  x: 268.73112142039395
+  y: 70.0
+  z: 176.99517856990357
+  yaw: 109.20024108886719
+  pitch: 25.950063705444336
