@@ -5,12 +5,11 @@ This is a PaperMC 1.21.4 Build #224 Server, Pre-Build and Pre-Configurated for m
 
 ## Specifications
 
-Below is the Specifications of the Server. It can roughly host 10 players at once.
+Below is the Specifications of my Local Server. It can roughly host 10 players at once.
 - CPU: Intel Pentium G2030 (2 cores + 2 threads)
 - RAM: TeamGroup 2x4GB DDR3-1333MHz
 - Storage: TeamGroup GX2 SSD 120GB SATA
 - OS: Linux Mint 20.3 Una
-Whole PC is dedicated for this server to ensure smooth gameplay.
 
 ## How to Run
 
@@ -30,10 +29,10 @@ sudo adduser manager
 ```bash
 sudo nano /etc/systemd/system/minecraft.service
 ```
-3. Paste this following in GNU Text Editor that have opened:
+And paste this following in GNU Text Editor that have opened:
 ```txt
 [Unit]
-Description=Minecraft PaperMC Server
+Description=PhobosID's Pre-Build Server
 After=network.target
 
 [Service]
@@ -46,18 +45,40 @@ RestartSec=10
 [Install]
 WantedBy=multi-user.target
 ```
+3. Create a Systemd Service for the SSH tunnelling
+This is for the Server
+```bash
+sudo nano /etc/systemd/system/console.service
+```
+And paste this following in GNU Text Editor that have opened:
+```txt
+Description=SSH Server Tunnel
+After=network.target
+
+[Service]
+User=manager
+WorkingDirectory=/home/owner/server
+ExecStart=/home/owner/server/console.sh
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
 4. Reload Systemd and Enable the Service
 ```
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
 sudo systemctl enable minecraft
+sudo systemctl enable console
 ```
 5. Start the Server
 ```
 sudo systemctl start minecraft
+sudo systemctl start console
 ```
 To check if it's really start
 ```
 sudo systemctl status minecraft
-
+sudo systemctl status console
 ```
